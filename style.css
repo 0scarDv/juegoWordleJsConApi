@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+    height: 600px;
+
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+*/
+}
+
+
+
+.contenedorDeCasillas {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    height: 300px;
+
+
+}
+
+.contenedorDeLetras {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+
+}
+
+.casilla {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: gainsboro;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnJugar {
+
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 50px;
+    background-color: rgb(248, 49, 89);
+    color: white;
+
+
+}
+
+#btnJugar:active {
+    transform: scale(0.9);
+}
+
+#btnDeNuevo {
+    display: none;
+    margin: 20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(248, 49, 89);
+    color: white;
+
+
+}
+
+#btnDeNuevo:active {
+    transform: scale(0.9);
+}
+
+
+#entrada {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+
+#mensaje {
+
+    height: 100px;
+    display: none;
+    font-size: 30px;
+
+}
+
+#mensaje2 {
+    margin: 0%;
+    height: 100px;
+    display: none;
+    font-size: 30px;
+
+}
+
+#mensaje h1 {
+    margin: 0%;
+}
+
+#mensaje2 h1 {
+    margin: 0%;
+}
+
+#btnAyuda {
+    background-color: rgb(255, 255, 255);
+    border: 0;
+}
+
+.header {
+    display: flex;
+
+    justify-content: end;
+    width: 100%;
+
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 100%;
+    }
+}

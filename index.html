@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wordle</title>
+</head>
+
+<body>
+    <div class="header">
+        <button id="btnAyuda">Ayuda</button>
+    </div>
+    <main>
+        <h1> Wordle PPY</h1>
+        <input id="entrada" type="text">
+        <div class="contenedorDeCasillas">
+            <div class="contenedorDeLetras" id="fila1">
+
+                <div class="casilla">
+                    <h1 id="letra1"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 id="letra2"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 id="letra3"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 id="letra4"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 id="letra5"></h1>
+                </div>
+            </div>
+            <div class="contenedorDeLetras" id="fila2">
+
+                <div class="casilla">
+                    <h1 id="letra6"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 id="letra7"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 id="letra8"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 id="letra9"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 id="letra10"></h1>
+                </div>
+            </div>
+            <div class="contenedorDeLetras" id="fila3">
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra11"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra12"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra13"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra14"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra15"></h1>
+                </div>
+            </div>
+
+            <div class="contenedorDeLetras" id="fila4">
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra16"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra17"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra18"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra19"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra20"></h1>
+                </div>
+            </div>
+
+            <div class="contenedorDeLetras" id="fila5">
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra21"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra22"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra23"> </h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra24"></h1>
+                </div>
+
+                <div class="casilla">
+                    <h1 class="letra" id="letra25"></h1>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="btnJugar">Adivinar</button>
+        <button id="btnDeNuevo">Jugar de nuevo</button>
+
+
+    </main>
+    <div id="mensaje">
+        <h1>Ganaste! 😁</h1>
+    </div>
+    <div id="mensaje2">
+        <h1>Perdiste! 😞</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
