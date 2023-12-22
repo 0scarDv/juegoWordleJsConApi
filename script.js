@@ -5,29 +5,25 @@
  */
 
 
+//const palabras = ["Mango", "Lapiz", "Nubes", "Perro", "fuerte", "Ducha", "Tigre", "Pizar", "Cebra", "dardo"];
+const palabras = [
+  "Mango", "Lápiz", "Nubes", "Perro", "Fuerte", "Ducha", "Tigre", "Pizar", "Cebra", "Dardo",
+  "Viento", "Pelar", "Oveja", "Reloj", "Camino", "Sierra", "Azote", "Monte", "Puente", "Ramas",
+  "Agua", "Luzon", "Rocas", "Llave", "Libro", "Radio", "Estan", "Nadar", "Océano", "Flojo",
+  "Alaún", "Canto", "Ramal", "Villa", "Zorro", "Banco", "Altoz", "Pezón", "Somos", "Vacas",
+  "Manta", "Cueva", "Cabra", "Flore", "Piano", "Mesas", "Osito", "Venus", "Fuego", "Toras",
+  "Hozar", "Lince", "Joven", "Serio", "Freno", "Helio", "Fideo", "Aires", "Fruta", "Estos",
+  "Calle", "Manos", "Lugar", "Islaú", "Techo", "Reina", "Nieve", "China", "Rápid", "Trama",
+  "Viento", "Coser", "Lente", "Hojar", "Jardín", "Cacao", "Cuboé", "Malla", "Talar", "Tempo",
+  "Vocal", "Pájaro", "Piede", "Estar", "Desir", "Patas", "Vista", "Almao", "Avent", "Cambí",
+  "Luzón", "Cuerp", "Orión", "Piola", "Izado", "Trata", "Tiara", "Zurra", "Lente", "Vigía"
+];
 
-//Obtener las palabras desde una API
-let palabra
-const urlAPI = 'https://random-word-api.herokuapp.com/word?lang=es&&number=1&&length=5';
-let palabraObjetivo;
-fetch(urlAPI).then(response => response.json())
-  .then(response => {
-    palabra = response[0].toLowerCase();
-    palabraObjetivo = palabra;
-   
-  })
+let indiceAleatorio = Math.floor(Math.random() * palabras.length);
 
-  .catch(err => {
-    console.log("Hubo un error con la API");
-    const palabras = ["Mango", "Lapiz", "Nubes", "Perro", "fuerte", "Ducha", "Tigre", "Pizar", "Cebra", "dardo"];
-    let indiceAleatorio = Math.floor(Math.random() * palabras.length);
-    palabraObjetivo = palabras[indiceAleatorio].toLowerCase();
-
-  });
+let palabraObjetivo = palabras[indiceAleatorio].toLowerCase();
 
 
-
-console.log(palabraObjetivo);
 let intentos = 5;
 //casillas
 const letra1 = document.getElementById('letra1');
@@ -132,7 +128,7 @@ function comprobarPalabra() {
           if (entrada[i] === palabraObjetivo[i]) {// en caso de que coincida una letra
             arrayLetras[i].innerHTML = entrada[i];
             let padre = arrayLetras[i].parentNode; //se encuetra al padre del elemento para cambiar el color del fondo
-            padre.style.backgroundColor = 'green';
+            padre.style.backgroundColor = 'rgb(67, 160, 71)';
 
           }
           else if (palabraObjetivo.includes(entrada[i])) { // en caso de que la palabra contenga esa letra
@@ -145,7 +141,7 @@ function comprobarPalabra() {
           else { // en caso de que no coincida una letra
             arrayLetras[i].innerHTML = entrada[i];
             let padre = arrayLetras[i].parentNode; //se encuetra al padre del elemento para cambiar el color del fondo
-            padre.style.backgroundColor = 'grey ';
+            padre.style.backgroundColor = 'rgb(117, 117, 117)';
 
           }
 
